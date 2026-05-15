@@ -9,7 +9,6 @@ Prácticas de la asignatura **Estructura de Datos** (2º curso) implementadas en
 | `Practica1/` | TADs lineales | Implementación de listas, pilas y colas como TAD. |
 | `Practica2/` | TAD Árbol | Implementación y operaciones sobre árboles binarios. |
 | `Practica3/` | Estructuras avanzadas | Memoria + código sobre estructuras más complejas. |
-| `Ejercicios/` | Varios | Ejercicios sueltos por tema (recursión, manejo de tiempo, etc.). |
 
 ## 🛠️ Tecnologías
 

@@ -326,7 +326,7 @@ while True:
             libro = Libro()
             
             while True:
-                numero = input("\nIntroduce un el ISBN (número de 6 dígitos): ")
+                numero = input("\nIntroduce el ISBN (número de 6 dígitos): ")
                 try:
                     numero = int(numero)
                     if 100000 <= numero <= 999999:
@@ -355,10 +355,10 @@ while True:
         case "2":
             
             while True:
-                burcar = input("\nIntroduce el ISBN del libro a buscar: ")
+                buscar = input("\nIntroduce el ISBN del libro a buscar: ")
                 try:
-                    burcar = int(burcar)
-                    if 100000 <= burcar <= 999999:                                                
+                    buscar = int(buscar)
+                    if 100000 <= buscar <= 999999:                                                
                         break  
                     else:
                         print("El ISBN debe tener exactamente 6 dígitos.")
@@ -367,18 +367,18 @@ while True:
         
           
             print("\n--------------------------------------------------------------------------.")
-            if ABB1.buscar(burcar):
+            if ABB1.buscar(buscar):
                 arboles(ABB1,ABB2,ABB3)
-                print(f"Evento: Libro encontrado: ISBN {burcar} en ABB1")
-            elif ABB2.buscar(burcar):
+                print(f"Evento: Libro encontrado: ISBN {buscar} en ABB1")
+            elif ABB2.buscar(buscar):
                 arboles(ABB1,ABB2,ABB3)
-                print(f"Evento: Libro encontrado: ISBN {burcar} en ABB2")
-            elif ABB3.buscar(burcar):
+                print(f"Evento: Libro encontrado: ISBN {buscar} en ABB2")
+            elif ABB3.buscar(buscar):
                 arboles(ABB1,ABB2,ABB3)
-                print(f"Evento: Libro encontrado: ISBN {burcar} en ABB3")
+                print(f"Evento: Libro encontrado: ISBN {buscar} en ABB3")
             else:
                 arboles(ABB1,ABB2,ABB3)
-                print(f"Evento: Libro con ISBN {burcar} no encontrado.")
+                print(f"Evento: Libro con ISBN {buscar} no encontrado.")
             print("--------------------------------------------------------------------------.")
         case "3":
             print("\nPresiona 1-Ensayo")
@@ -397,7 +397,7 @@ while True:
                     print("ABB1 PREORDER:",end="")
                     ABB1.recorrer_preorder()
                     print()  # Salto de línea final
-                    print("ABB1 PORTORDER:",end="")
+                    print("ABB1 POSTORDEN:",end="")
                     ABB1.recorrer_postorder()   
                     print("--------------------------------------------------------------------------.")
                     
@@ -409,7 +409,7 @@ while True:
                     print("ABB2 PREORDER:",end="")
                     ABB2.recorrer_preorder()
                     print()  # Salto de línea final
-                    print("ABB2 PORTORDER:",end="")
+                    print("ABB2 POSTORDEN:",end="")
                     ABB2.recorrer_postorder()
                     print("--------------------------------------------------------------------------.")
                     
@@ -421,7 +421,7 @@ while True:
                     print("ABB3 PREORDER:",end="")
                     ABB3.recorrer_preorder()
                     print()  # Salto de línea final
-                    print("ABB3 PORTORDER:",end="")
+                    print("ABB3 POSTORDEN:",end="")
                     ABB3.recorrer_postorder()
                     print("--------------------------------------------------------------------------.")
             
@@ -514,7 +514,7 @@ while True:
                         print(f"Evento: Libro encontrado y BORRADO: ISBN {libro.ISBN} en ABB1")
                     else: 
                         arboles(ABB1,ABB2,ABB3)
-                        print(f"Evento: No se encontro el libro con id {libro.ISBN} en ABB1.")
+                        print(f"Evento: No se encontró el libro con id {libro.ISBN} en ABB1.")
                     print("--------------------------------------------------------------------------.")
                 elif libro.genero == "novela":
                     if ABB2.buscar(libro.ISBN):
@@ -523,7 +523,7 @@ while True:
                         print(f"Evento: Libro encontrado y BORRADO: ISBN {libro.ISBN} en ABB2")
                     else:   
                         arboles(ABB1,ABB2,ABB3)
-                        print(f"Evento: No se encontro el libro con id {libro.ISBN} en ABB2.")
+                        print(f"Evento: No se encontró el libro con id {libro.ISBN} en ABB2.")
                     print("--------------------------------------------------------------------------.")
                 else:
                     if ABB3.buscar(libro.ISBN):
@@ -532,7 +532,7 @@ while True:
                         print(f"Evento: Libro encontrado y BORRADO: ISBN {libro.ISBN} en ABB3")
                     else:   
                         arboles(ABB1,ABB2,ABB3)
-                        print(f"Evento: No se encontro el libro con id {libro.ISBN} en ABB3.")
+                        print(f"Evento: No se encontró el libro con id {libro.ISBN} en ABB3.")
                     print("--------------------------------------------------------------------------.")
                # time.sleep(1)  # Pequeño retardo 
             

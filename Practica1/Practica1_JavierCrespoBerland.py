@@ -225,7 +225,7 @@ def simulacion(LibrosDevueltos,pila_ensayo,pila_novela,pila_poesia):
                     print(f"Evento: El libro con ISBN {pila_novela.Cabeza.ISBN} abandona la pila Novela.")
                     pila_novela.desapilar()
                 else:
-                    print(f"Evento: El libro con ISBN {pila_poesia.Cabeza.ISBN} abandona la pila Poesia.")
+                    print(f"Evento: El libro con ISBN {pila_poesia.Cabeza.ISBN} abandona la pila Poesía.")
                     pila_poesia.desapilar()
 
                 print("--------------------------------------------------------------------------.")              

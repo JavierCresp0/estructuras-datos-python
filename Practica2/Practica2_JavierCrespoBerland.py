@@ -1,8 +1,9 @@
 # -*- coding: utf-8 -*-
 """
-Created on Fri Mar 28 17:46:37 2025
+Práctica 2 — TAD Árbol binario (implementación y recorridos)
+Estructura de Datos · Grado en Ingeniería Informática
 
-@author: Usuario
+Autor: Javier Crespo Berland
 """
 
 from abc import ABC, abstractmethod

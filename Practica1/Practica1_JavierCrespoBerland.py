@@ -1,8 +1,9 @@
 # -*- coding: utf-8 -*-
 """
-Created on Fri Mar  7 14:10:29 2025
+Práctica 1 — Tipos Abstractos de Datos lineales (listas, pilas y colas)
+Estructura de Datos · Grado en Ingeniería Informática
 
-@author: Usuario
+Autor: Javier Crespo Berland
 """
 from abc import ABC, abstractmethod
 import time
